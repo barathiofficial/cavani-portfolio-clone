@@ -1,0 +1,30 @@
+.main {
+	width: 100%;
+	height: calc(100vh - var(--header-height) - var(--footer-height));
+	padding: 0 var(--container-padding);
+}
+
+.main .hero {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.main .hero .left {
+	width: 40%;
+	height: 100%;
+}
+
+.main .hero .left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.main .hero .right {
+	width: 60%;
+	height: 100%;
+	background-color: #9992cc1c;
+}
