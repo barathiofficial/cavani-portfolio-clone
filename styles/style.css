@@ -4,8 +4,8 @@
 	--white: #fff;
 	--dark: #333;
 	--light: #f4f4f4;
-	--gray: #7a7a7a;
-	--container-padding: 80px;
+	--gray: rgb(122, 122, 122);
+	--container-padding: 70px;
 	--header-height: 70px;
 	--footer-height: 70px;
 }
