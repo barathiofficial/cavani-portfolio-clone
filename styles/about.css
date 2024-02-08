@@ -1,0 +1,187 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+:root{
+    --heading-color:rgb(51,51,51);
+}
+
+
+  .right{
+    display: block;
+    padding: 95px 50px 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--gray);
+}
+
+h4{
+    letter-spacing: 7px;
+    color: var(--heading-color);   
+    position: relative; 
+    font-family: 'Poppins', sans-serif;
+    display: block;
+}
+
+h4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    margin-right:50px;
+    height: 2px;
+    top: 50%;
+    background-color: rgb(178, 181, 185);
+    margin-left: 25px;
+}
+
+
+.about-me-content,.ser-int-contents{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    margin-top: 55px;
+    line-height: 25.5px;
+        
+}
+.passage{
+    flex: 1;
+
+}
+
+.passage p{
+    width: 80%;
+    
+}
+
+
+.firstcolumn{
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    font-weight: 700;
+    color: var(--gray);
+
+}
+
+.bio-data{
+    flex: 1;
+}
+
+.bio-data table{
+    line-height: 33px;
+}
+
+.ser-int-contents{
+    margin-top: 87px;
+    display: flex;
+}
+
+.ser-int-contents ul{
+    list-style: none;
+    margin-top: 55px;
+
+}
+
+.services,.interests{
+    flex: 1;
+}
+
+.ser-int-contents ul li{
+    margin-bottom: 8px;
+}
+
+.ser-int-contents ul li i{
+    margin-right: 20px;
+}
+
+.programming{
+    margin-top: 85px;
+}
+
+.programming h4{
+    margin: 0 0 20px;
+}
+
+.programming p{
+    margin-bottom: 7px;
+}
+.skillbar-container{
+    width: 100%;
+    background-color: rgba(92, 92, 92, 0.192);
+    height: 3px;
+    margin-bottom: 30px;
+}
+
+.bar{
+    background-color: var(--gray);
+    height: 3px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.html {
+    width: 60%;
+}
+
+.javascript{
+    width: 85%;
+}
+
+.wordpress{
+    width: 90%;
+}
+
+.bar .bar-per{
+    position: absolute;
+    right: 0px;
+    bottom: 8px;    
+}
+
+.language{
+    margin-top: 95px;
+}
+
+.lang-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.lang-container .progress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+
+.lang-container .progress h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 500;
+
+}
+
+.lang-container .progress h1 span{
+    font-size: 0.65em;
+    font-weight: 400;
+
+}
+
+.lang-container .progress h6{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+    
+
+}
+  
