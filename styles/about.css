@@ -1,136 +1,138 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 :root{
     --heading-color:rgb(51,51,51);
     
 }
 
 
-  .right{
+.right{
     display: block;
     padding: 95px 50px 0;
     overflow-x: hidden;
     overflow-y: scroll;
     color: var(--gray);
     font-family: 'Open Sans', sans-serif;
-}
-
-h4{
-    letter-spacing: 7px;
-    color: var(--heading-color);   
-    position: relative; 
-    font-family: 'Poppins', sans-serif;
-    display: block;
-}
-
-h4::after{
-    content: "";
-    position: absolute;
-    width: calc(100% - 165px);
-    margin-right:50px;
-    height: 2px;
-    top: 50%;
-    background-color: rgb(178, 181, 185);
-    margin-left: 25px;
+    width: 100% ;
 }
 
 
-.about-me-content,.ser-int-contents{
-    
-    font-size: 15px;
+/* Subtitle and line */
+.subtitle-and-line {
     display: flex;
-    margin-top: 55px;
-    line-height: 25.5px;
-        
+    align-items: center;
 }
-.passage{
-    flex: 1;
 
+.subtitle-and-line span{
+    margin-right: 25px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    letter-spacing: 7px;
+}
+
+.subtitle-and-line hr{
+    flex: 1;
+    border: none;
+    border-top: 2px solid rgba(125, 119, 137, 0.514);
+}
+
+
+/* About me section designs */
+.about-me-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 15px;    
+    margin-top: 55px;
+    line-height: 25.5px; 
+    margin-bottom: 87px;     
+}
+
+.passage{
+    width: 40%;
 }
 
 .passage p{
-    width: 80%;
-    
-}
-
-
-.firstcolumn{
-    font-family: 'Open Sans', sans-serif;
-    width: 100px;
-    font-weight: 700;
-    color: var(--gray);
-
+    width: 100%;
+    color: rgb(125, 119, 137);
+    font-weight: 400;    
 }
 
 .bio-data{
-    flex: 1;
+    width: 50%;
 }
 
-.bio-data table{
-    line-height: 33px;
+.bio-data li{
+    margin-bottom: 8px;
+    list-style: none;
 }
 
-
-.services h4::after{
-    content: "";
-    position: absolute;
-    width: 90px;
-    margin-right:50px;
-    height: 2px;
-    top: 50%;
-    background-color: rgb(178, 181, 185);
-    margin-left: 25px;
+.first-column{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(125, 119, 137);
+    display: inline-block;    
+    min-width: 100px;
+    font-weight: 700;
+    color: var(--gray);
 }
-.ser-int-contents{
-    margin-top: 87px;
+
+/* Services and Interests Section */
+
+.ser-int-content{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 25.5px;
+    font-size: 15px;
+    margin-bottom: 87px;
+   
 }
 
-.ser-int-contents ul{
+.services{
+    width: 40%;
+}
+
+.interests{
+    width: 50%;
+}
+
+.ser-int-content ul{
     list-style: none;
     margin-top: 55px;
-
 }
 
-.services,.interests{
-    flex: 1;
-}
-
-.ser-int-contents ul li{
+.ser-int-content ul li{
     margin-bottom: 8px;
 }
 
-.ser-int-contents ul li i{
+.ser-int-content ul li i{
     margin-right: 20px;
 }
 
+/* Programming and language content */
+.program-lang-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 55px;
+}
+
 .programming{
-    margin-top: 85px;
+
+   width: 40%;
 }
 
-.programming h4{
-    margin: 0 0 20px;
-    letter-spacing: 7px;
-    color: var(--heading-color);   
-    position: relative; 
-    font-family: 'Poppins', sans-serif;
-    display: block;
-}
-
-.programming h4::after{
-    content: "";
-    position: absolute;
-    width: 388px;
-    margin-right:50px;
-    height: 2px;
-    top: 50%;
-    background-color: rgb(178, 181, 185);
-    margin-left: 25px;
+.programming .subtitle-and-line{
+    margin-bottom: 35px;
 }
 
 .programming p{
     margin-bottom: 7px;
 }
+
 .skillbar-container{
     width: 100%;
     background-color: rgba(92, 92, 92, 0.192);
@@ -164,35 +166,13 @@ h4::after{
 }
 
 .language{
-    margin-top: 95px;
-}
-
-.language h4{
-    margin: 0 0 20px;
-    letter-spacing: 7px;
-    color: var(--heading-color);   
-    position: relative; 
-    font-family: 'Poppins', sans-serif;
-    display: block;
-}
-
-.language h4::after{
-    content: "";
-    position: absolute;
-    width: 447px;
-    margin-right:50px;
-    height: 2px;
-    top: 50%;
-    background-color: rgb(178, 181, 185);
-    margin-left: 25px;
+    width: 50%;
 }
 
 .language-bars-container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-top: 55px;
-    gap: 90px;
-    margin-bottom: 100px;
 }
 
 .language-bar-container {
@@ -266,47 +246,35 @@ h4::after{
     justify-content: center;
 }
 
+.edu-exp-content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    /* flex-wrap: wrap; */
+    line-height: 25.5px;
+
+}
+
 .education{
     margin-top: 55px;
+    width: 40%;
+}
+
+.mathu{
     display: flex;
-    gap: 10px;
-    width: 290px;
-
-}
-
-.edu-h4{
-    margin: 0 0 20px;
-    letter-spacing: 7px;
-    color: var(--heading-color);   
-    position: relative; 
-    font-family: 'Poppins', sans-serif;
-    display: block;
-}
-
-.edu-h4::after{
-    content: "";
-    position: absolute;
-    width: 430px;
-    margin-right:50px;
-    height: 2px;
-    top: 50%;
-    background-color: rgb(178, 181, 185);
-    margin-left: 25px;
-}
-
-.edu-details{
-    padding-top: 10px;
+    margin-top: 50px;
+    gap: 20px;
 }
 
 
-.education .round-tracking{
+.mathu .round-tracking{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 200px; */
+    
 }
 
-.education .round-tracking .vertical-line-1{
+/* .education .round-tracking .vertical-line-1{
     width: 1px;
     height: 19px;
     background-color: rgba(125, 119, 137, 0.3);
@@ -324,7 +292,7 @@ h4::after{
     height: 18px;
     border-radius: 50%;
     border: 1px solid rgba(125, 119, 136, 0.3);
-}
+} */
 
 
 .edu-details .col-1{
@@ -366,34 +334,15 @@ h4::after{
 
 
 .experience{
-    margin-top: 50px;
-    display: flex;
+    width: 50%;
+    margin-top: 55px;
+    /* display: flex; */
     gap: 10px;
-    width: 290px;
-
 }
 
-.exp-h4{
-    margin: 0 0 20px;
-    letter-spacing: 7px;
-    color: var(--heading-color);   
-    position: relative; 
-    font-family: 'Poppins', sans-serif;
-    display: block;
-}
 
-.exp-h4::after{
-    content: "";
-    position: absolute;
-    width: 425px;
-    margin-right:50px;
-    height: 2px;
-    top: 50%;
-    background-color: rgb(178, 181, 185);
-    margin-left: 25px;
-}
 
-.exp-details{
+.exp-details,.edu-details{
     padding-top: 10px;
 }
 
@@ -405,20 +354,21 @@ h4::after{
     /* height: 200px; */
 }
 
-.experience .round-tracking .vertical-line-1{
+
+ .round-tracking .vertical-line-1{
     width: 1px;
     height: 19px;
     background-color: rgba(125, 119, 137, 0.3);
     
 }
 
-.experience .round-tracking .vertical-line-2{
+.round-tracking .vertical-line-2{
     width: 1px;
-    height: 100px;
+    height: 90px;
     background-color: rgba(125, 119, 136, 0.3);
 }
 
-.experience .round-tracking .round-shape{
+.round-tracking .round-shape{
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -500,25 +450,7 @@ h4::after{
     
 }
 
-.testi-h4{
-    margin: 0 0 20px;
-    letter-spacing: 7px;
-    color: var(--heading-color);   
-    position: relative; 
-    font-family: 'Poppins', sans-serif;
-    display: block;
-}
 
-.testi-h4::after{
-    content: "";
-    position: absolute;
-    width: 388px;
-    margin-right:50px;
-    height: 2px;
-    top: 50%;
-    background-color: rgb(178, 181, 185);
-    margin-left: 25px;
-}
 
 .testimonials .box{
     border: 2px solid rgb(213, 221, 228);

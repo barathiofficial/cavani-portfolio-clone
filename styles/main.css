@@ -12,17 +12,19 @@
 }
 
 .main .hero .left {
+	width: 35%;
 	height: 100%;
 }
 
 .main .hero .left img {
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
 }
 
 .main .hero .right {
-	width: 100%;
+	width: 65%;
 	height: 100%;
 	background-color: #9992cc1c;
 }

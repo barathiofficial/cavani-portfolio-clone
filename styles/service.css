@@ -1,0 +1,101 @@
+
+.right{
+    display: block;
+    padding: 95px 50px 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--gray);
+    font-family: 'Open Sans', sans-serif;
+    width: 100% ;
+}
+
+.subtitle-and-line {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle-and-line span{
+    margin-right: 25px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    letter-spacing: 7px;
+}
+
+.subtitle-and-line hr{
+    flex: 1;
+    border: none;
+    border-top: 2px solid rgba(125, 119, 137, 0.514);
+}
+
+
+
+.service-box-container{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 110px;
+}
+
+
+.service-box{
+    border: 1px solid rgba(51, 51, 51, 0.295);
+    max-width: 46%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-self: center;
+    padding: 8% 0;
+    line-height: 25.5px;
+    position: relative;
+   
+}
+
+.service-box a{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-box p{
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 80%;
+}
+
+.service-box h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    margin-top:10px ;
+}
+
+.service-box .fa-4x{
+    color: #333333;
+}
+
+
+/* hover effects  */
+.service-box:hover{
+    background-color:rgb(53, 52, 52);
+}
+
+.service-box:hover h3{
+    color: white;
+}
+
+.service-box:hover p{
+    color: rgb(131, 131, 131);
+}
+
+.service-box:hover .fa-4x{
+    color:white;
+}

@@ -1,0 +1,105 @@
+
+
+/* Set Padding for class=right */
+
+.right{
+    padding: 95px 50px 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+
+/* Subtitle and line */
+.subtitle-and-line {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle-and-line span{
+    margin-right: 25px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    letter-spacing: 7px;
+}
+
+.subtitle-and-line hr{
+    flex: 1;
+    border: none;
+    border-top: 2px solid rgba(125, 119, 137, 0.514);
+}
+
+/* Set the  navigation bar list */
+
+.subtitle-container ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(115, 109, 126);
+    padding: 55px 0 42px;
+}
+
+.subtitle-container ul li{
+    cursor: pointer;
+}
+
+/* Set the base image container */
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 100px;
+    
+}
+
+.img-container .image-box{
+    position: relative;
+}
+
+/* set the height and width of the each individual image */
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* popup text */
+.image-box{    
+    width: 46%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container .pop-up{
+   
+    background-color: rgb(255, 255, 255);
+    padding: 15px; 
+    width: 87%;
+    left: 6.5%;
+    position: absolute;    
+    bottom: -100px;
+    transition: bottom 0.3s ease;        
+}
+
+
+.img-container .pop-up h3{
+    font-size: 16px;
+    color:rgb(51, 51, 51);        
+}
+
+.img-container .pop-up p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.image-box:hover .pop-up{
+    bottom: 20px;    
+}
